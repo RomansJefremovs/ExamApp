@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="BMI">BMI</string>
+    <string name="BrocaIndex">Broca Index</string>
+    <string name="PonderalIndex">Ponderal Index</string>
+    <string name="BSI">BSI</string>
+    <string name="AMI">AMI</string>
+    <string name="WHtR">WHtR</string>
+    <string name="WHR">WHR</string>
+    <string name="BodyFat">Body Fat</string>
+    <string name="Weight">Weight in kilograms</string>
+    <string name="Height">Height in meters</string>
+    <string name="Waist">Waist size in meters</string>
+    <string name="Hip">Hip circumference in meters</string>
+    <string name="titleDash">Enter the values of your body</string>
+    <string name="titleRecyclerItemTitle">Test Title</string>
+    <string name="titleRecyclerItemParagraph">Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph Test Paragraph</string>
+</resources>

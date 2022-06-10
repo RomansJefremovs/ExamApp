@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="#e4e4e4"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recyclerItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/titleRecyclerItemTitle"
+        android:textColor="#616161" />
+
+    <TextView
+        android:id="@+id/recyclerItemParagraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/titleRecyclerItemParagraph"
+        android:textColor="#616161"
+        tools:layout_marginTop="20dp" />
+</LinearLayout>
