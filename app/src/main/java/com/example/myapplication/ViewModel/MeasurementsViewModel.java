@@ -37,4 +37,13 @@ public class MeasurementsViewModel extends AndroidViewModel {
     public Measurement getLastMeasurement(){
         return allMeasurements.getValue().get(allMeasurements.getValue().size() - 1);
     }
+
+    public double getBMI(Measurement measurement){
+        float weight = measurement.getWeight();
+        float height = measurement.getHeight();
+        float h2 = height*height;
+        double BMI = weight/h2;
+        return BMI;
+    }
+
 }
