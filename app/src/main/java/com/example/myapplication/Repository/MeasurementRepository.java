@@ -19,6 +19,7 @@ public class MeasurementRepository {
         MeasurementDatabase database = MeasurementDatabase.getInstance(application);
         measurementDAO = database.measurementDAO();
         allMeasurements = measurementDAO.getAllMeasurements();
+
     }
 
     public void insert(Measurement measurement){
@@ -36,6 +37,7 @@ public class MeasurementRepository {
     public LiveData<List<Measurement>> getAllMeasurements(){
         return allMeasurements;
     }
+
 
     private static class InsertMeasurementAsyncTask extends AsyncTask<Measurement, Void, Void>{
         private MeasurementDAO measurementDAO;
@@ -77,4 +79,5 @@ public class MeasurementRepository {
             return null;
         }
     }
+
 }

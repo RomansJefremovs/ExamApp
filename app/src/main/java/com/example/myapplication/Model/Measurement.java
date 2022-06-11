@@ -7,12 +7,12 @@ import androidx.room.PrimaryKey;
 public class Measurement {
     @PrimaryKey(autoGenerate = true)
     private int id;
-    private float weight;
-    private float height;
-    private float waist;
-    private float hip;
+    private double weight;
+    private double height;
+    private double waist;
+    private double hip;
 
-    public Measurement(float weight, float height, float waist, float hip) {
+    public Measurement(double weight, double height, double waist, double hip) {
         this.weight = weight;
         this.height = height;
         this.waist = waist;
@@ -27,7 +27,7 @@ public class Measurement {
         this.id = id;
     }
 
-    public float getWeight() {
+    public double getWeight() {
         return weight;
     }
 
@@ -35,7 +35,7 @@ public class Measurement {
         this.weight = weight;
     }
 
-    public float getHeight() {
+    public double getHeight() {
         return height;
     }
 
@@ -43,7 +43,7 @@ public class Measurement {
         this.height = height;
     }
 
-    public float getWaist() {
+    public double getWaist() {
         return waist;
     }
 
@@ -51,7 +51,7 @@ public class Measurement {
         this.waist = waist;
     }
 
-    public float getHip() {
+    public double getHip() {
         return hip;
     }
 

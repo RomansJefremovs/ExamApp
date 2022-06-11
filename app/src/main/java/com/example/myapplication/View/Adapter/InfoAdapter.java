@@ -12,10 +12,11 @@ import com.example.myapplication.Model.Info;
 import com.example.myapplication.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder>{
 
-    private ArrayList<Info> infoArrayList;
+    private List<Info> infoArrayList = new ArrayList<>();
 
     public InfoAdapter(ArrayList<Info> infoList){
         infoArrayList = infoList;
