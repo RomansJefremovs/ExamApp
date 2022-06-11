@@ -60,6 +60,7 @@ public class NotificationsFragment extends Fragment {
         infoAdapter = new InfoAdapter(infoArrayList);
         infoList.setAdapter(infoAdapter);
         infoList.setLayoutManager(layoutManager);
+//        reference.se
     }
 
 
