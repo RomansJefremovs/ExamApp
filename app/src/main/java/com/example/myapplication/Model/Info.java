@@ -1,19 +1,30 @@
 package com.example.myapplication.Model;
 
 public class Info {
-    private String mTitle;
-    private String mParagraph;
+    private String title;
+    private String paragraph;
 
-    public Info(String title, String paragraph){
-        mTitle =  title;
-        mParagraph = paragraph;
+    public Info(){
+
+    }
+    public Info(String title, String paragraph) {
+        this.title = title;
+        this.paragraph = paragraph;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setParagraph(String paragraph) {
+        this.paragraph = paragraph;
     }
 
     public String getTitle() {
-        return mTitle;
+        return title;
     }
 
     public String getParagraph() {
-        return mParagraph;
+        return paragraph;
     }
 }
