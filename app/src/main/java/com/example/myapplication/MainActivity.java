@@ -1,8 +1,5 @@
 package com.example.myapplication;
-
 import android.os.Bundle;
-import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -14,22 +11,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity {
+    private DatabaseReference reference;
     private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        final Button btn = binding.getRoot().findViewById(R.id.test1);
         setContentView(binding.getRoot());
-        btn.setOnClickListener(view -> {
-            FirebaseDatabase database = FirebaseDatabase.getInstance();
-            DatabaseReference reference = database.getReference();
-            reference.setValue("pls write smth");
-        });
+
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -39,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+
     }
+
 
 }
