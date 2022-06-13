@@ -6,8 +6,8 @@ import android.os.AsyncTask;
 import androidx.lifecycle.LiveData;
 
 import com.example.myapplication.Model.Indeces;
-import com.example.myapplication.Model.IndecesDAO;
-import com.example.myapplication.Model.MeasurementDatabase;
+import com.example.myapplication.Model.RoomDatabase.IndecesDAO;
+import com.example.myapplication.Model.RoomDatabase.MeasurementDatabase;
 
 import java.util.List;
 

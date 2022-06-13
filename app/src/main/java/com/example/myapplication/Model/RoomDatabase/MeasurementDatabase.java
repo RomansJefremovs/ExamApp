@@ -1,11 +1,15 @@
-package com.example.myapplication.Model;
+package com.example.myapplication.Model.RoomDatabase;
 
 import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-@Database(entities = {Measurement.class,Indeces.class}, version = 2)
+
+import com.example.myapplication.Model.Indeces;
+import com.example.myapplication.Model.Measurement;
+
+@Database(entities = {Measurement.class, Indeces.class}, version = 2)
 public abstract class MeasurementDatabase extends RoomDatabase {
 
     private static MeasurementDatabase instance;

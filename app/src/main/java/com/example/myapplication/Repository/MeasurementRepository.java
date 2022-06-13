@@ -6,8 +6,8 @@ import android.os.AsyncTask;
 import androidx.lifecycle.LiveData;
 
 import com.example.myapplication.Model.Measurement;
-import com.example.myapplication.Model.MeasurementDAO;
-import com.example.myapplication.Model.MeasurementDatabase;
+import com.example.myapplication.Model.RoomDatabase.MeasurementDAO;
+import com.example.myapplication.Model.RoomDatabase.MeasurementDatabase;
 
 import java.util.List;
 
