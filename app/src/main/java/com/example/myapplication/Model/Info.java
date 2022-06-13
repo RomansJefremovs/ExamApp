@@ -12,14 +12,6 @@ public class Info {
         this.paragraph = paragraph;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setParagraph(String paragraph) {
-        this.paragraph = paragraph;
-    }
-
     public String getTitle() {
         return title;
     }
